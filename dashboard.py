@@ -100,8 +100,13 @@ st.plotly_chart(fig, use_container_width=True)
 
 # Display explanation below the chart
 st.markdown("""
-### Explanation for the Chart
 
+Stablecoins act as the backbone of crypto liquidity. But...
+Is their growth aligned with the market cap of Bitcoin, Ethereum, and altcoins?
+Divergence could hint at instability or tightening liquidity—a red flag to watch          
+            
+### Explanation for the Chart
+                
 This chart highlights the role of stablecoins (e.g., USDT, USDC) in providing liquidity to the cryptocurrency market. Stablecoins are crucial as they act as a buffer between fiat currencies and crypto investments.
 
 The ratios show how much stablecoin liquidity backs different segments of the market:
@@ -127,10 +132,10 @@ st.markdown("""
 
 If you like the content, you can help by donating any amount (e.g., $0.01) to improve this website and motivate its development:
 
-- **Solana:** `ApAVasEykd9g26YpwjaHKZRUGrjKBVwTarPRptBqbnub`
-- **Bitcoin:** `bc1qhumnm6fdasatvtnelgv6an97nrvg25uxl29fqh`
-- **Ethereum:** `0x14effaF60778faBF31Ae3D69BD27a520c1dD8bb8`
-- **Base:** `0x14effaF60778faBF31Ae3D69BD27a520c1dD8bb8`
+- **Solana:** `B1VpyKtgBiKQzXDpMZrAEX9JzhbBPB1aDLMA7MZNL3C2`
+- **Bitcoin:** `bc1q57scwkx3wvcddvzel4kkctx45q6k7gy24e9m8x`
+- **Ethereum:** `0x9fDD87cF82D2F985FF63285b8CAcEb6546D89072`
+- **Base:** `0x9fDD87cF82D2F985FF63285b8CAcEb6546D89072`
 """)
 
 # Bind to Heroku's dynamic port
