@@ -81,7 +81,7 @@ for index, coin_id in enumerate(top_coins):
         altcoins_df = coin_df
     else:
         altcoins_df = altcoins_df.merge(coin_df, on="Timestamp", how="outer")
-    time.sleep(20)  # Add delay to avoid rate limits
+    time.sleep(15)  # Add delay to avoid rate limits
 
 # Fill missing values with zero in altcoin data
 altcoins_df = altcoins_df.fillna(0)
