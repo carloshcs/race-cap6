@@ -38,7 +38,7 @@ def fetch_historical_market_cap(coin_id, days=365):
         "interval": "daily"
     }
     response = requests.get(url, params=params)
-    time.sleep(20)
+    time.sleep(15.5)
     if response.status_code == 429:
         print(f"Rate limit exceeded while fetching {coin_id}. Waiting for 60 seconds.")
         time.sleep(60)
@@ -81,7 +81,7 @@ for index, coin_id in enumerate(top_coins):
         altcoins_df = coin_df
     else:
         altcoins_df = altcoins_df.merge(coin_df, on="Timestamp", how="outer")
-    time.sleep(15)  # Add delay to avoid rate limits
+    time.sleep(15.5)  # Add delay to avoid rate limits
 
 # Fill missing values with zero in altcoin data
 altcoins_df = altcoins_df.fillna(0)
